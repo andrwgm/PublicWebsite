@@ -1,0 +1,112 @@
+.mainContent {
+    display: block;
+}
+
+.topContent {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    max-width: 100vw;
+}
+
+/* .topContent img{
+    width: 100%;
+    position: sticky;
+} */
+
+.titleAndButton {
+    height: 30em;
+    display: flex;
+    background-color: #34475961;
+}
+
+.titleAndButton .titles {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleAndButton .bigTitle{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    font-family: 'LemonMilk', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5em;
+    color: white;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+
+.titleAndButton .smallTitle{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    padding-left: 3rem;
+    padding-top: 1rem;
+}
+
+.titleAndButton .smallTitle .smallTitleBold{
+    font-family: 'AthelasBold', 'Times New Roman', Times, serif;
+    font-size: 2.1em;
+}
+
+.titleAndButton .smallTitle .smallTitleRegular{
+    font-family: 'AthelasRegular', 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    margin-top:-0.5em;
+}
+
+.titleAndButton .bookButton{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleAndButton .bookButton img {
+    width: 8em;
+}
+
+.titleAndButton .bookButton .p-button {
+    border-radius: 100%;
+    height: 10.5em;
+    padding-top: 1em;
+    background-color: #ffffff00;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.titleAndButton .bookButton .p-button:hover {
+    transform: scale(1.05);
+}
+
+.titleAndButton .bookButton .p-button:focus {
+    box-shadow: none;
+    transform: scale(0.95);
+}
+
+.whiteBg{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.bgContent {
+    z-index: 0;
+    position: fixed;
+    max-width: 100vw;
+}
+
+.bgContent img{
+    width: 100%;
+    transform: translateY(-3em);
+}
+
+.footer {
+    z-index: 1;
+    position: relative;
+}

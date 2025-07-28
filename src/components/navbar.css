@@ -1,0 +1,48 @@
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1000;
+    background: white; /* or your preferred background */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* optional, for subtle shadow */
+    padding-inline: 2em;
+    height: 5em;
+}
+.topbar img {
+    height: 2em;
+    margin: 1em;
+    margin-left: 10%;
+}
+
+.topbar .p-menubar-start {
+    margin-right: auto;
+}
+
+.topbar .p-menubar{
+    border: none;
+    border-radius: none;
+    color: none;
+    background: none;
+}
+
+.topbar .p-button{
+    border: none;
+    color: #2D3B55;
+    background: #9ECDC9;
+    border-radius: 2em;
+}
+
+.topbar .p-button:hover{
+    background: #37B5BC;
+}
+
+.topbar .p-button:focus{
+    outline: none;
+    outline-offset: none;
+}
+
+.topbar .p-menuitem-content{
+    border-radius: 2em;
+    transition: background-color .2s;
+}
