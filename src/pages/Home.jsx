@@ -71,7 +71,7 @@ export default function Home() {
                 </div>
               </div>
               <div className='whyChooseUsImg'>
-                <Image src="/images/whyChooseUsImg.jpg" />
+                <Image src="/images/flower-kid.png" />
               </div>
             </div>
 
