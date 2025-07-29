@@ -107,9 +107,9 @@
 
 .whyChooseUsTitle {
     font-family: 'LemonMilk', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3em;
+    font-size: 4em;
     color: #344759;
-    padding-top: 4em;
+    padding: 1.5em 0 0.5em;
 }
 
 .whyChooseUsTextAndImg {
@@ -119,11 +119,18 @@
     justify-content: center;
 }
 
+.whyChooseUsTextAndImg img{
+    width: 30em;
+}
+
 .whyChooseUsText {
+    width: 35%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    margin-left: 3em;
+    font-size: 1.4em;
 }
 
 .whyChooseUsTextBold {
@@ -134,6 +141,7 @@
 .whyChooseUsTextRegular {
     font-family: 'AthelasRegular', 'Times New Roman', Times, serif;
     font-size: 1.2em;
+    margin-bottom: 1em;
 }
 
 .bgContent {
