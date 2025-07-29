@@ -98,6 +98,44 @@
     background-color: white;
 }
 
+.whyChooseUsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.whyChooseUsTitle {
+    font-family: 'LemonMilk', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3em;
+    color: #344759;
+    padding-top: 4em;
+}
+
+.whyChooseUsTextAndImg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.whyChooseUsText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.whyChooseUsTextBold {
+    font-family: 'AthelasBold', 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+
+.whyChooseUsTextRegular {
+    font-family: 'AthelasRegular', 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
 .bgContent {
     z-index: 0;
     position: fixed;
