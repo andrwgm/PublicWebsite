@@ -32,12 +32,51 @@ export default function Home() {
             </div>
           </div>
           <div className='bookButton'>
-            <Button>   
+            <Button>
               <Image src="/images/bookButton.png" />
-            </Button>              
+              BOOK IN 60
+            </Button>
           </div>
         </div>
-        <div className='whiteBg'></div>
+        <div className='whiteBg'>
+          <div className='whyChooseUsContent'>
+            <div className='whyChooseUsTitle'>
+              Why Choose Us?
+            </div>
+            <div className='whyChooseUsTextAndImg'>
+              <div className='whyChooseUsText'>
+                <div className='whyChooseUsTextBold'>
+                  No waiting list.
+                </div>
+                <div className='whyChooseUsTextRegular'>
+                  Automatic appointment available vs +2 years on the NHS.
+                </div>
+                <div className='whyChooseUsTextBold'>
+                  Expert team.
+                </div>
+                <div className='whyChooseUsTextRegular'>
+                  Child and adult psychiatrists with GMC registration and NHS experience.
+                </div>
+                <div className='whyChooseUsTextBold'>
+                  Valid reports
+                </div>
+                <div className='whyChooseUsTextRegular'>
+                  for education plans and work adjustments (Equality Act 2010).
+                </div>
+                <div className='whyChooseUsTextBold'>
+                  Flexibility.
+                </div>
+                <div className='whyChooseUsTextRegular'>
+                  Online assessment throughout the UK.
+                </div>
+              </div>
+              <div className='whyChooseUsImg'>
+                <Image src="/images/whyChooseUsImg.jpg" />
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
       <Footer />
     </div>

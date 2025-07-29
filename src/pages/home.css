@@ -17,9 +17,9 @@
 } */
 
 .titleAndButton {
-    height: 30em;
     display: flex;
     background-color: #34475961;
+    padding-bottom: 4em;
 }
 
 .titleAndButton .titles {
@@ -28,7 +28,7 @@
     flex-direction: column;
 }
 
-.titleAndButton .bigTitle{
+.titleAndButton .bigTitle {
     width: 100%;
     display: flex;
     align-items: flex-start;
@@ -39,7 +39,7 @@
     padding-top: 3rem;
 }
 
-.titleAndButton .smallTitle{
+.titleAndButton .smallTitle {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -49,18 +49,18 @@
     padding-top: 1rem;
 }
 
-.titleAndButton .smallTitle .smallTitleBold{
+.titleAndButton .smallTitle .smallTitleBold {
     font-family: 'AthelasBold', 'Times New Roman', Times, serif;
     font-size: 2.1em;
 }
 
-.titleAndButton .smallTitle .smallTitleRegular{
+.titleAndButton .smallTitle .smallTitleRegular {
     font-family: 'AthelasRegular', 'Times New Roman', Times, serif;
     font-size: 1.5em;
-    margin-top:-0.5em;
+    margin-top: -0.5em;
 }
 
-.titleAndButton .bookButton{
+.titleAndButton .bookButton {
     width: 35%;
     display: flex;
     justify-content: center;
@@ -68,16 +68,20 @@
 }
 
 .titleAndButton .bookButton img {
-    width: 8em;
+    width: 9em;
 }
 
 .titleAndButton .bookButton .p-button {
-    border-radius: 100%;
-    height: 10.5em;
-    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: #ffffff00;
     border: none;
     transition: all 0.2s ease;
+    gap: 0.4em;
+    font-family: 'LemonMilk', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.35em;
 }
 
 .titleAndButton .bookButton .p-button:hover {
@@ -86,10 +90,9 @@
 
 .titleAndButton .bookButton .p-button:focus {
     box-shadow: none;
-    transform: scale(0.95);
 }
 
-.whiteBg{
+.whiteBg {
     width: 100%;
     height: 100vh;
     background-color: white;
@@ -101,9 +104,10 @@
     max-width: 100vw;
 }
 
-.bgContent img{
+.bgContent img {
     width: 100%;
     transform: translateY(-3em);
+    min-width: 80rem;
 }
 
 .footer {
