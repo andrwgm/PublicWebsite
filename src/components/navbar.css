@@ -46,3 +46,12 @@
     border-radius: 2em;
     transition: background-color .2s;
 }
+
+.topbar .p-menubar .p-menubar-root-list{
+    padding: 0.5rem;
+    border-radius: 1.5em;
+}
+
+.topbar .p-menubar .p-menubar-button:focus{
+    box-shadow: 0 0 0 .2rem #9ECDC9
+}
