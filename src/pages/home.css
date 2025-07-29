@@ -94,11 +94,17 @@
 
 .whiteBg {
     width: 100%;
-    height: 100vh;
     background-color: white;
 }
 
+.whiteBg .blueLine img {
+    margin-bottom: -55em;
+    position: absolute;
+    width: 38vw;
+}
+
 .whyChooseUsContent {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -119,7 +125,7 @@
     justify-content: center;
 }
 
-.whyChooseUsTextAndImg img{
+.whyChooseUsTextAndImg img {
     width: 30em;
 }
 

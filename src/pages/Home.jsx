@@ -39,6 +39,7 @@ export default function Home() {
           </div>
         </div>
         <div className='whiteBg'>
+          <Image className="blueLine" src="/images/blueLine.png"/>
           <div className='whyChooseUsContent'>
             <div className='whyChooseUsTitle'>
               Why Choose Us?
