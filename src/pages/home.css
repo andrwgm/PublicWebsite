@@ -11,6 +11,18 @@
     max-width: 100vw;
 }
 
+.bgContent {
+    z-index: 0;
+    position: fixed;
+    max-width: 100vw;
+}
+
+.bgContent img {
+    width: 100%;
+    transform: translateY(-3em);
+    min-width: 80rem;
+}
+
 /* .topContent img{
     width: 100%;
     position: sticky;
@@ -150,16 +162,16 @@
     margin-bottom: 1em;
 }
 
-.bgContent {
-    z-index: 0;
-    position: fixed;
-    max-width: 100vw;
+.whiteBg .curveShadow img {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
-.bgContent img {
-    width: 100%;
-    transform: translateY(-3em);
-    min-width: 80rem;
+.gentleSlide {
+    /* transition: none; Remove transition for smooth scroll-based animation */
+    transform: translateY(5em);
+    margin-bottom: 30em;
 }
 
 .footer {

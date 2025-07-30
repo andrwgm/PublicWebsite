@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import './home.css';
 
@@ -8,6 +8,36 @@ import { Image } from 'primereact/image';
 import { Button } from 'primereact/button';
 
 export default function Home() {
+  const gentleSlideRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (gentleSlideRef.current) {
+        const rect = gentleSlideRef.current.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const elementTop = rect.top;
+        const elementHeight = rect.height;
+        
+        // Calculate how much of the element should be visible
+        const progress = Math.max(0, Math.min(1, (windowHeight - elementTop) / (windowHeight + elementHeight)));
+        
+        // Apply transform based on scroll progress
+        const translateY = (5 + progress * 40) ;
+
+        if(translateY <= 25){
+          gentleSlideRef.current.style.transform = `translateY(${translateY}em)`;
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Call once to set initial position
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="mainContent">
       <div className='bgContent'>
@@ -39,7 +69,7 @@ export default function Home() {
           </div>
         </div>
         <div className='whiteBg'>
-          <Image className="blueLine" src="/images/blueLine.png"/>
+          <Image className="blueLine" src="/images/blueLine.png" />
           <div className='whyChooseUsContent'>
             <div className='whyChooseUsTitle'>
               Why Choose Us?
@@ -75,7 +105,43 @@ export default function Home() {
                 <Image src="/images/flower-kid.png" />
               </div>
             </div>
-
+          </div>
+          <Image className="curveShadow" src="/images/curveShadow.png" />
+          <div className='whyChooseUsContent gentleSlide' ref={gentleSlideRef}>
+            <div className='whyChooseUsTitle'>
+              Why Choose Us?
+            </div>
+            <div className='whyChooseUsTextAndImg'>
+              <div className='whyChooseUsText'>
+                <div className='whyChooseUsTextBold'>
+                  No waiting list.
+                </div>
+                <div className='whyChooseUsTextRegular'>
+                  Automatic appointment available vs +2 years on the NHS.
+                </div>
+                <div className='whyChooseUsTextBold'>
+                  Expert team.
+                </div>
+                <div className='whyChooseUsTextRegular'>
+                  Child and adult psychiatrists with GMC registration and NHS experience.
+                </div>
+                <div className='whyChooseUsTextBold'>
+                  Valid reports
+                </div>
+                <div className='whyChooseUsTextRegular'>
+                  for education plans and work adjustments (Equality Act 2010).
+                </div>
+                <div className='whyChooseUsTextBold'>
+                  Flexibility.
+                </div>
+                <div className='whyChooseUsTextRegular'>
+                  Online assessment throughout the UK.
+                </div>
+              </div>
+              <div className='whyChooseUsImg'>
+                <Image src="/images/flower-kid.png" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
