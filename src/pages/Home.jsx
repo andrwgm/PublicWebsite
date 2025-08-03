@@ -33,6 +33,8 @@ export default function Home() {
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Call once to set initial position
 
+    window.history.scrollRestoration = 'manual'
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
