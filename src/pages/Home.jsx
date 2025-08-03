@@ -34,7 +34,7 @@ export default function Home() {
     handleScroll(); // Call once to set initial position
 
     window.history.scrollRestoration = 'manual'
-    
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -147,7 +147,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 } 
